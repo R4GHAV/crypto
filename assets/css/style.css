@@ -1,10 +1,43 @@
-.section {
-  background-image: url(../images/Group.png);
-  background: rgb(0, 0, 0);
+.s1 {
+  background-image: url(../images/1.png);
+}
+
+.s2 {
+  background-image: url(../images/2.png);
+}
+
+.s3 {
+  background-image: url(../images/3.png);
+}
+
+.s4 {
+  background-image: url(../images/4.png);
+}
+
+.s6 {
+  background-image: url(../images/6.png);
+}
+
+.s7 {
+  background-image: url(../images/7.png);
 }
 
 .whitish {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.blue_border {
+  background: rgba(0, 194, 255, 0.2);
+  backdrop-filter: blur(55px);
+  padding: 25px;
+  border-radius: 30px;
+}
+
+.blue_border1 {
+  background: rgba(0, 194, 255, 0.2);
+  backdrop-filter: blur(55px);
+  padding: 10px;
+  border-radius: 30px;
 }
 
 /* .swiper-container {
