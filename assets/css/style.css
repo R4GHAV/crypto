@@ -82,34 +82,38 @@
 
 .swiper-full-mobile {
   position: relative;
-  margin: 50px auto;
-  padding-bottom: 50px;
+  margin: auto;
 }
 
 .swiper-full-mobile:before {
   content: "";
-  width: 290px;
-  background: url(https://assets.stickpng.com/images/5cb0633d80f2cf201a4c3253.png);
+  width: 202px;
+  background: url(../images/iPhone\ 13\ Pro.png);
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   right: 0;
   top: 0px;
-  height: 425px;
+  height: 430px;
   z-index: 2;
-  margin: auto;
+  margin: 22px auto;
 }
 .swiper-full-mobile .swiper-slide {
 height: 100%;
 }
-.swiper-full-mobile .swiper-slide img{
+.carousel-item img{
 width: 100%;
-height: 530px;
+height: 403px;
+width: 183px;
 object-fit: cover;
 
 }
 .swiper-slide.swiper-slide-active img {
 border-radius: 40px;
 
+}
+
+.bgnew {
+  background-image: url(../images/5.png);
 }
