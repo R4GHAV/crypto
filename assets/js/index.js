@@ -1,47 +1,114 @@
-new fullpage('#fullpage');
+new fullpage("#fullpage");
 
-var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
-    slidesPerView: 5,
-    spaceBetween: 50,
-    slideToClickedSlide:true,
-    centeredSlides:true,
-   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+var slide = document.querySelector(".carousel")
+// function addSlide() {
+  slide.innerHTML += `<div class="carousel-item">
+  <img src="./assets/images/mobile1.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile2.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile3.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile4.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile5.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile6.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile7.png" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+  <img src="./assets/images/mobile8.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile9.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile10.png" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+  <img src="./assets/images/mobile1.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile2.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile3.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile4.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile5.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile6.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile7.png" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+  <img src="./assets/images/mobile8.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile9.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile10.png" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+  <img src="./assets/images/mobile1.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile2.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile3.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile4.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile5.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile6.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile7.png" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+  <img src="./assets/images/mobile8.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile9.png" alt="Pizza" />
+  </div> 
+  <div class="carousel-item">
+  <img src="./assets/images/mobile10.png" alt="Pizza" />
+  </div>
+  `
+// }
 
-    },
+slide.addEventListener('mouseenter', pause)
+slide.addEventListener('mouseleave', resume)
 
-    loop:true,
-    //   autoplay: {
-    //     delay: 100000,
-    //   },
+function pause() {
+  clearInterval(scroller);
+}
 
+function resume() {
+  clearInterval(scroller);
+  scroller = setInterval(() => {
+    slide.scrollLeft += 215;
+  }, 1000);
+}
 
-      keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-
-     breakpoints: {
-          
-          640: {
-            freemode:true,
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          320: {
-            freemode:true,
-            slidesPerView: 3,
-            spaceBetween: 20,
-          }
-    }
-
-  });
-  
+scroller = setInterval(() => {
+  slide.scrollLeft += 215;
+}, 1000);

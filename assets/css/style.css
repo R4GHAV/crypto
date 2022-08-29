@@ -29,7 +29,7 @@
 .blue_border {
   background: rgba(0, 194, 255, 0.2);
   backdrop-filter: blur(55px);
-  padding: 25px;
+  padding: 35px 60px;
   border-radius: 30px;
 }
 
@@ -116,4 +116,27 @@ border-radius: 40px;
 
 .bgnew {
   background-image: url(../images/5.png);
+}
+
+.inp_field {
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: 0;
+  background: transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.qna {
+  color: black;
+}
+
+.qna_border {
+  border: 2px solid #e5e7eb;
+
+}
+
+.blue_border_add {
+  color: #1E90FF;
+  border-color: #1E90FF;
 }
