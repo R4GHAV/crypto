@@ -26,6 +26,15 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.cc_bg {
+  background-image: url(../images/CryptoCase.png);
+  height: 150px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-size: contain;
+}
+
 .blue_border {
   background: rgba(0, 194, 255, 0.2);
   backdrop-filter: blur(55px);
@@ -110,11 +119,11 @@ border-radius: 40px;
 section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 footer{
   margin-bottom: 20px;
-  margin-top:auto; 
 }
 
 .vert {
